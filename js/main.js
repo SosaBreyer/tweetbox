@@ -2,7 +2,7 @@ Vue.component("tweet", {
     props: ['tweetText'],
     data: function () {
         return {
-            tweetText: "Hello, World!",
+            tweetText: "",
             charactersRemaining: 280,
             commentText: '',
             liked: false,
@@ -27,7 +27,7 @@ Vue.component("tweet", {
         this.getActualDate();
     },
     template: `
-    <div class="status" id="app">
+    <div class="status">
         <div class="tweet-content">
             <img src="https://pbs.twimg.com/profile_images/934753976737812480/4VrxzaV6_400x400.jpg" class="logo" alt="Twitter Avatar">
             <div class="tweet">
@@ -57,8 +57,8 @@ new Vue({
     el: "#app",
     data: {
         tweets: [
-            { id: 1, tweetText: "hello world!"},
-            { id: 2, tweetText: "hi!"}
+            { id: 1, tweetText: "Hello, World!"},
+            { id: 2, tweetText: "Hi!"}
         ]
     }
 });
