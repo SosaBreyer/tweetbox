@@ -1,0 +1,1 @@
+A small Vue 2 application as a result of Ali Spittel's tutorial https://welearncode.com/beginners-guide-vue/
